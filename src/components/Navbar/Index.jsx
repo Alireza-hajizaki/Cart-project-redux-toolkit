@@ -9,7 +9,7 @@ export default function NavbarWithDropdown() {
             rounded
         >
             <Navbar.Brand href="https://flowbite-react.com">
-                <Button>
+                <Button className='mr-4'>
                     <HiShoppingCart className="mr-2 h-5 w-5" />
                     <p>
                         Buy now
@@ -22,7 +22,7 @@ export default function NavbarWithDropdown() {
             <div className="flex md:order-2">
                 <Dropdown
                     inline
-                    label={<Avatar alt="User settings" img="https://flowbite.com/docs/images/people/profile-picture-5.jpg" rounded/>}
+                    label={<Avatar alt="User settings" img="" rounded/>}
                 >
                     <Dropdown.Header>
             <span className="block text-sm">

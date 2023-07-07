@@ -1,22 +1,21 @@
-
-
 import { Card } from 'flowbite-react';
 import {AiFillStar} from "react-icons/ai";
 
-export default function ECommerceCard() {
+export default function ECommerceCard(product) {
     return (
         <Card
             imgAlt="Apple Watch Series 7 in colors pink, silver, and black"
             imgSrc="apple-watch.png"
-            style={{width: "400px"}}
+            style={{width: "300px"}}
         >
             <a href="#">
-                <h5 className="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
+                <h1 className="text-4xl text-gray-900 dark:text-white">
                     <p>
-                        Apple Watch Series 7 GPS, Aluminium Case, Starlight Sport
+                        {product.title}
                     </p>
-                </h5>
+                </h1>
             </a>
+            <h2>{product.description}</h2>
             <div className="mb-5 mt-2.5 flex items-center">
                 <AiFillStar />
                 <AiFillStar />
@@ -31,7 +30,7 @@ export default function ECommerceCard() {
             </div>
             <div className="flex items-center justify-between">
         <span className="text-3xl font-bold text-gray-900 dark:text-white">
-          $599
+          {product.price}
         </span>
                 <a
                     className="rounded-lg bg-cyan-700 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-cyan-800 focus:outline-none focus:ring-4 focus:ring-cyan-300 dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800"
