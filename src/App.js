@@ -1,12 +1,13 @@
 import './App.css';
 import NavbarWithDropdown from "./components/Navbar/Index";
-import ECommerceCard from "./components/Cart/Cart";
+import Products from "./components/Products/Products";
+
 
 function App() {
   return (
         <>
             <NavbarWithDropdown/>
-            <ECommerceCard />
+            <Products/>
         </>
 
 );
