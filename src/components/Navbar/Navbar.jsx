@@ -1,20 +1,33 @@
 import { Dropdown, Button , Navbar ,Avatar } from 'flowbite-react';
-import { HiOutlineArrowRight, HiShoppingCart } from 'react-icons/hi';
+import { HiShoppingCart } from 'react-icons/hi';
+import { Badge } from 'flowbite-react';
+import {useSelector} from "react-redux";
+import { Link , NavLink } from "react-router-dom";
 
 
-export default function NavbarWithDropdown() {
+ function NavbarWithDropdown() {
+
+    const countProducts = useSelector(store => store.card.shoppCart)
+
     return (
         <Navbar
             fluid
             rounded
         >
-            <Navbar.Brand href="https://flowbite-react.com">
+            <Navbar.Brand href=''>
+                <div className='relative'>
                 <Button className='mr-4'>
                     <HiShoppingCart className="mr-2 h-5 w-5" />
-                    <p>
-                        Buy now
-                    </p>
+                        <NavLink to='shopping-cart'>
+                          <p>
+                              Buy now
+                          </p>
+                        </NavLink>
                 </Button>
+                    {countProducts.length > 0 && <Badge size="sm" className='w-[30px] h-[30px] d-flex justify-center items-center rounded-full absolute left-[6.5rem] -my-[3.1rem]'>
+                        {countProducts.length >0 && countProducts.length}
+                </Badge>}
+                </div>
                 <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">
           Flowbite React
         </span>
@@ -73,5 +86,7 @@ export default function NavbarWithDropdown() {
         </Navbar>
     )
 }
+
+export default NavbarWithDropdown;
 
 

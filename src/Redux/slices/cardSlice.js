@@ -1,7 +1,6 @@
 import {createSlice} from "@reduxjs/toolkit";
-import {useState} from "react";
 
-// const [decrement , setDecrement] = useState("");
+
 const initialState = {
     shoppCart : [],
     increment : '',
@@ -15,13 +14,16 @@ export const cardSlice = createSlice({
     name:'Card',
     initialState,
     reducers : {
-        setAddToProduct : (state , action) => {
-            state.shoppCart = [...state.shoppCart , {...action.payload}]
-        }
+        setAddToCart : (state , action) => {
+            state.shoppCart = [...state.shoppCart , action.payload]
+        },
+        setRemoveFromCart : (state , action) => {
+            state.shoppCart = state.shoppCart.filter(product => product.id !== action.payload)
+        },
 
     }
 })
 
-export const { reducers } = cardSlice.actions
+export const { setAddToCart , setRemoveFromCart } = cardSlice.actions
 
 export default cardSlice.reducer
