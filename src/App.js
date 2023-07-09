@@ -1,13 +1,15 @@
 import './App.css';
-import NavbarWithDropdown from "./components/Navbar/Index";
-import Products from "./components/Products/Products";
+import {useRoutes} from "react-router-dom";
+import routes from "./router";
 
 
 function App() {
+
+    const router = useRoutes(routes)
+
   return (
         <>
-            <NavbarWithDropdown/>
-            <Products/>
+            {router}
         </>
 
 );
