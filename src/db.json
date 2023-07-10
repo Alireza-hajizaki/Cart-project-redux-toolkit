@@ -2,35 +2,39 @@
     "products": [
         {
             "id": 1,
-            "title": "Product 1",
+            "title": "iphone 14 Pro Max",
             "description": "nostrum rerum est autem sunt rem eveniet architecto",
             "category": "food",
-            "price": "3000",
-            "qty" :3
+            "price": "1049",
+            "img" : "iphone-14.jpg",
+            "quantity" :4
         },
         {
             "id": 2,
-            "title": "Product 2",
+            "title": "Apple-Watch",
             "description": "et iusto sed quo iure\nvoluptatem occaecati",
             "category": "sport",
-            "price": "4000",
-            "qty" : 5
+            "price": "699",
+            "img" : "Apple-Watch.jpg",
+            "quantity" : 5
         },
         {
             "id": 3,
-            "title": "Product 3",
+            "title": "Galaxy-Watch",
             "description": "ullam et saepe reiciendis voluptatem",
             "category": "technology",
-            "price": "4500",
-            "qty" : 1
+            "price": "599",
+            "img" : "galaxy-watch.avif",
+            "quantity" : 3
         },
         {
             "id": 4,
-            "title": "Product 4",
-            "description": "repudiandae veniam quaerat sunt sed\nalias aut fugiat sit autem",
+            "title": "Galaxy s23 Ultra",
+            "description": "repudiandae veniam sed\nalias fugiat sit autem",
             "category": "food",
-            "price": "4500",
-            "qty" : 1
+            "price": "969",
+            "img" : "samsung-galaxy-s23-ultra.avif",
+            "quantity" : 7
         },
         {
             "id": 5,
@@ -38,7 +42,7 @@
             "description": "dolore placeat quibusdam ea quo vitae\nmagni quis",
             "category": "food",
             "price": "4500",
-            "qty" : 1
+            "quantity" : 1
         },
         {
             "id": 6,
@@ -46,7 +50,7 @@
             "description": "in quibusdam tempore odit est dolorem",
             "category": "sport",
             "price": "4500",
-            "qty" : 1
+            "quantity" : 1
         },
         {
             "id": 7,
@@ -54,7 +58,7 @@
             "description": "excepturi ut quia\nsunt ut sequi eos ea sed quas",
             "category": "food",
             "price": "4500",
-            "qty" : 1
+            "quantity" : 1
         },
         {
             "id": 8,
@@ -62,7 +66,7 @@
             "description": "nesciunt iure omnis dolorem tempora et accusantium",
             "category": "technology",
             "price": "4500",
-            "qty" : 1
+            "quantity" : 1
         }
     ]
 }

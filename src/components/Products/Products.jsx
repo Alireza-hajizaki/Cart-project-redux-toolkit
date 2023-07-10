@@ -4,9 +4,9 @@ import ECommerceCard from "../Cart/Cart";
 
 const Products = () => {
     return (
-        <div className='flex flex-wrap gap-5 mx-36 mt-8 mb-8'>
+        <div className='flex flex-wrap gap-5 mx-36 mt-28 mb-8 ml-56'>
             {
-                data.products.slice(0,3).map(product => (
+                data.products.slice(0,4).map(product => (
                  <ECommerceCard
                      key={product.id}
                      {...product}
